@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Papa John’s Kazakhstan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Добро пожаловать в Papa John’s 🍕</h1>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu">
+        <h2>Закуски</h2>
+
+        <div class="items">
+
+            <div class="item">
+                <img src="https://order.papajohns.kz/images/menu/Papa%20Johns%20Kazakhstan/336x224_134ab4b86b6e392067487306e53f5251.jpg">
+                <div class="item-content">
+                    <h3>Кальзоне мясной</h3>
+                    <p>Куриная грудка, лук и моцарелла, завернутые в наше свежее особое тесто.</p>
+                    <div class="price-cart">
+                        <span class="price">1900 тг</span>
+                        <button onclick="addToCart('Кальзоне мясной', 1900)">Добавить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://order.papajohns.kz/images/menu/Papa%20Johns%20Kazakhstan/336x224_7cf2534979e5148a61e86f6c1e658d8f.jpg">
+                <div class="item-content">
+                    <h3>Кальзоне овощной</h3>
+                    <p>Шампиньоны, лук, зелёный перец и сыр Моцарелла.</p>
+                    <div class="price-cart">
+                        <span class="price">1300 тг</span>
+                        <button onclick="addToCart('Кальзоне овощной', 1300)">Добавить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://order.papajohns.kz/images/menu/Papa%20Johns%20Kazakhstan/336x224_3f979f55250f354e298e1475a3ae56ad.jpg">
+                <div class="item-content">
+                    <h3>Куриные крылышки BBQ 10 шт</h3>
+                    <p>Куриные крылышки с соусом «Барбекю».</p>
+                    <div class="price-cart">
+                        <span class="price">3000 тг</span>
+                        <button onclick="addToCart('Крылышки BBQ', 3000)">Добавить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <div class="cart">
+        <h3>🛒 Корзина</h3>
+        <div id="cartItems"></div>
+        <div class="total" id="totalPrice">Итого: 0 тг</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
